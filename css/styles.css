@@ -71,11 +71,11 @@
  * ## fonts 
  * ------------------------------------------------------------------- */
  @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Marcellus&family=Gothic+A1:wght@300;400;500;600;700&display=fallback");
- @import url(../css/font/FreightBigPro/stylesheet.css);
+ @import url(../css/font/tobias/stylesheet.css);
  :root {
      --font-1    : "Lora", serif;
      --font-2    : "Gothic A1", sans-serif;
-     --font-3    : Playfair, sans-serif;
+     --font-3    : Tobias, sans-serif;
  
      /* monospace
      */
@@ -194,31 +194,31 @@
       * base font size: 20px 
       * vertical space unit : 32px
       */
-     --base-size        : 62.5%;
-     --multiplier       : 1;
-     --base-font-size   : calc(2rem * var(--multiplier));
-     --space            : calc(3.2rem * var(--multiplier));
+ --base-size        : 62.5%;
+ --multiplier       : 1;
+ --base-font-size   : calc(2rem * var(--multiplier));
+ --space            : calc(3.2rem * var(--multiplier));
  
      /* vertical spacing 
       */
-     --vspace-0_125     : calc(0.125 * var(--space));
-     --vspace-0_25      : calc(0.25 * var(--space));
-     --vspace-0_375     : calc(0.375 * var(--space));
-     --vspace-0_5       : calc(0.5 * var(--space));
-     --vspace-0_625     : calc(0.625 * var(--space));
-     --vspace-0_75      : calc(0.75 * var(--space));
-     --vspace-0_875     : calc(0.875 * var(--space));
-     --vspace-1         : calc(var(--space));
-     --vspace-1_25      : calc(1.25 * var(--space));
-     --vspace-1_5       : calc(1.5 * var(--space));
-     --vspace-1_75      : calc(1.75 * var(--space));
-     --vspace-2         : calc(2 * var(--space));
-     --vspace-2_5       : calc(2.5 * var(--space));
-     --vspace-3         : calc(3 * var(--space));
-     --vspace-3_5       : calc(3.5 * var(--space));
-     --vspace-4         : calc(4 * var(--space));
-     --vspace-4_5       : calc(4.5 * var(--space));
-     --vspace-5         : calc(5 * var(--space));
+ --vspace-0_125     : calc(0.125 * var(--space));
+ --vspace-0_25      : calc(0.25 * var(--space));
+ --vspace-0_375     : calc(0.375 * var(--space));
+ --vspace-0_5       : calc(0.5 * var(--space));
+ --vspace-0_625     : calc(0.625 * var(--space));
+ --vspace-0_75      : calc(0.75 * var(--space));
+ --vspace-0_875     : calc(0.875 * var(--space));
+ --vspace-1         : calc(var(--space));
+ --vspace-1_25      : calc(1.25 * var(--space));
+ --vspace-1_5       : calc(1.5 * var(--space));
+ --vspace-1_75      : calc(1.75 * var(--space));
+ --vspace-2         : calc(2 * var(--space));
+ --vspace-2_5       : calc(2.5 * var(--space));
+ --vspace-3         : calc(3 * var(--space));
+ --vspace-3_5       : calc(3.5 * var(--space));
+ --vspace-4         : calc(4 * var(--space));
+ --vspace-4_5       : calc(4.5 * var(--space));
+ --vspace-5         : calc(5 * var(--space));
  
      /* type scale
       * ratio 1         :2 | base: 20px
@@ -238,22 +238,22 @@
       *
       * ---------------------------------------------------------
       */
-     --text-scale-ratio : 1.2;
-     --text-size        : var(--base-font-size);
-     --text-xs          : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
-     --text-sm          : calc(var(--text-xs) * var(--text-scale-ratio));
-     --text-md          : calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
-     --text-lg          : calc(var(--text-md) * var(--text-scale-ratio));
-     --text-xl          : calc(var(--text-lg) * var(--text-scale-ratio));
-     --text-xxl         : calc(var(--text-xl) * var(--text-scale-ratio));
-     --text-xxxl        : calc(var(--text-xxl) * var(--text-scale-ratio));
-     --text-display-1   : calc(var(--text-xxxl) * var(--text-scale-ratio));
-     --text-display-2   : calc(var(--text-display-1) * var(--text-scale-ratio));
-     --text-display-3   : calc(var(--text-display-2) * var(--text-scale-ratio));
+ --text-scale-ratio : 1.2;
+ --text-size        : var(--base-font-size);
+ --text-xs          : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+ --text-sm          : calc(var(--text-xs) * var(--text-scale-ratio));
+ --text-md          : calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+ --text-lg          : calc(var(--text-md) * var(--text-scale-ratio));
+ --text-xl          : calc(var(--text-lg) * var(--text-scale-ratio));
+ --text-xxl         : calc(var(--text-xl) * var(--text-scale-ratio));
+ --text-xxxl        : calc(var(--text-xxl) * var(--text-scale-ratio));
+ --text-display-1   : calc(var(--text-xxxl) * var(--text-scale-ratio));
+ --text-display-2   : calc(var(--text-display-1) * var(--text-scale-ratio));
+ --text-display-3   : calc(var(--text-display-2) * var(--text-scale-ratio));
  
      /* default button height
       */
-     --vspace-btn       : var(--vspace-2);
+ --vspace-btn       : var(--vspace-2);
  }
  
  /* on mobile devices below 600px, change the value of '--multiplier' 
@@ -962,6 +962,12 @@
          flex  : none;
          width : 50%;
      }
+
+     .block-tab-two-third>.column {
+        flex  : none;
+        width : 66%;
+    }
+
  
      .block-tab-whole>.column {
          flex  : none;
@@ -1278,7 +1284,7 @@
   */
  h1, h2, h3, h4, h5, h6, 
  .h1, .h2, .h3, .h4, .h5, .h6 {
-     font-family            : var(--font-2);
+     font-family            : var(--font-3);
      font-weight            : 500;
      color                  : var(--color-2-darker);
      font-variant-ligatures : common-ligatures;
@@ -1540,6 +1546,10 @@
      font-size: var(--text-size);
      line-height: calc(1.1 * var(--space));
      color       : var(--color-text-dark);
+ }
+
+ .lead:last-child{
+    margin-bottom: 0;
  }
  
  @media screen and (max-width: 400px) {
@@ -2811,7 +2821,7 @@
  }
  
  .text-huge-title {
-     --text-huge       : 11.2rem;
+     --text-huge: 8rem;
      --text-multiplier : 1;
      font-family       : var(--font-3);
      font-weight       : 400;
@@ -3101,16 +3111,21 @@
   * ## intro header
   * -------------------------------------------------------------------- */
  .s-intro__header {
-     width    : 100%;
+     width: 100vw;
      height   : var(--header-height);
-     position : absolute;
+     position: fixed;
      top      : 0;
      left     : 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 99;
+     padding: 0 2em;
  }
  
  .s-intro__logo {
      z-index  : 4;
-     position : absolute;
+     /* position : absolute; */
      top      : 2.4rem;
      left     : 4rem;
  }
@@ -3122,6 +3137,7 @@
      outline : 0;
      border  : none;
      color : #fff;
+     font-weight: 700;
  }
  
  .s-intro__logo img {
@@ -3131,6 +3147,28 @@
  }
  
  /* --------------------------------------------------------------------
+  * ## intro links
+  * -------------------------------------------------------------------- */
+  .s-intro__links{
+    display: flex;
+    flex-direction: row;
+    gap : 12px;
+
+  }
+
+  .s-intro__links a{
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-2);
+    font-size: 16px;
+    opacity: .8;
+  }
+
+  .s-intro__links a:hover{
+    opacity: 1;
+  }
+
+  /* --------------------------------------------------------------------
   * ## intro content
   * -------------------------------------------------------------------- */
  .s-intro__content {
@@ -3236,7 +3274,7 @@
      --color-btn-stroke-hover : rgba(0, 0, 0, .25);
      --color-btn-stroke-text  : white;
      z-index                  : 2;
-     position                 : absolute;
+     /* position                 : absolute; */
      top                      : 2.4rem;
      right                    : 4rem;
  }
@@ -3421,7 +3459,8 @@
  .s-intro__logo,
  .s-intro__notify,
  .s-intro__content,
- .s-intro__scroll {
+ .s-intro__scroll,
+ .s-intro__links {
      transition-timing-function : cubic-bezier(0.28, 0.12, 0.22, 1);
      transition-duration        : .5s;
      transition-delay           : 0s;
@@ -3429,7 +3468,8 @@
  }
  
  .s-intro__logo,
- .s-intro__notify {
+ .s-intro__notify,
+ .s-intro__links {
      transition-property : opacity, transform;
      transform           : translate(0, -100%);
  }
@@ -3450,19 +3490,22 @@
  .ss-show .s-intro__logo,
  .ss-show .s-intro__notify,
  .ss-show .s-intro__content,
- .ss-show .s-intro__scroll {
+ .ss-show .s-intro__scroll,
+ .ss-show .s-intro__links {
      opacity : 1;
  }
  
  .no-js .s-intro__logo,
  .no-js .s-intro__notify,
  .ss-show .s-intro__logo,
- .ss-show .s-intro__notify {
+ .ss-show .s-intro__notify,
+ .ss-show .s-intro__links {
      transform : translate(0, 0);
  }
  
  .no-js .s-intro__content,
- .ss-show .s-intro__content {
+ .ss-show .s-intro__content,
+ .ss-show .s-intro__links {
      transition-duration : 1.5s;
      transition-delay    : .5s;
  }
@@ -3671,6 +3714,17 @@
      margin-bottom : var(--vspace-1_75);
  }
  
+.details-two{
+    height: auto;
+
+    --overlay-opacity: 1;
+    padding-top: var(--vspace-4);
+    padding-bottom: var(--vspace-3);
+    min-height: 100vh;
+    width: 100%;
+    position: sticky;
+}
+
  /* --------------------------------------------------------------------
   * ## tabs
   * -------------------------------------------------------------------- */
@@ -3887,11 +3941,16 @@
  }
  
  .ss-go-top svg path {
-     fill       : var(--color-2-darker);
-     transition : all .3s ease-in-out;
- }
+    fill       : var(--color-2-darker);
+    transition : all .3s ease-in-out;
+}
+
+.ss-go-top.on-black svg path {
+    fill       : var(--color-2-light);
+    transition : all .3s ease-in-out;
+}
  
- .ss-go-top.link-is-visible {
+.ss-go-top.link-is-visible {
      opacity    : 1;
      visibility : visible;
      transform  : translate(0, 0);
@@ -3924,7 +3983,7 @@
  
  .ss-go-top a span {
      display          : block;
-     width            : 150px;
+     width: 190px;
      font-family      : var(--font-2);
      font-weight      : 400;
      font-size        : calc(var(--text-size) * 0.5);
@@ -4102,4 +4161,59 @@
          font-size   : var(--text-xs);
          line-height : var(--vspace-0_5);
      }
+ }
+
+.direction-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-grid{
+    /* border : 1px solid red; */
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+    margin-top: -40px;
+}
+
+ .post{
+    width: calc(50% - 8px);
+    min-height: 400px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+ }
+
+ .post .illustration{
+    display: flex;
+    align-items: center;
+ }
+
+ .post .illustration img{
+    margin: 0 auto;
+    padding: 12px;
+    width: 80%;
+ }
+
+
+ .post .title{
+    font-weight: bold;
+    font-size: 90%;
+    line-height: 1.25;
+ }
+
+ .post .infos{
+    font-size: 80%;
+    /* font-style: italic; */
+    line-height: 1.2;
+    opacity: 0.8;
+    text-decoration: none;
+    border: none;
+    font-family: var(--font-2);
  }
