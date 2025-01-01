@@ -3,6 +3,8 @@ let menu_side = document.querySelector(".menu-side");
 let menu_openned = false;
 
 
+
+
 trigger.addEventListener("click",function(){
     console.log(this);
     
