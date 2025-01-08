@@ -108,11 +108,9 @@ let mook_video = [
 let video_side = document.querySelector(".video-block-lateral");
 
 mook_video.forEach(element => {
+    console.log(element)
     
-    video_side.innerHTML+=`
-                    <div class="column services-list__item video-list-lateral">
-
-    <div class="ads-block video-content">
+    video_side.innerHTML+=`<div class="column services-list__item video-list-lateral"><div class="ads-block video-content">
                         <div class="cover">
                             <div class="bkg" style="background-image:url(`+ element.cover_photo+`); background-size:cover;"></div>
                             <a class="play-button" href="`+element.video_link+`">
